@@ -11,26 +11,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="gallery-page">
     <div class="container">
         <section>
-            <h2>Photo Gallery</h2>
-            <div class="gallery-grid">
+            <h2>Photography Gallery</h2>
+            <div class="gallery-container">
+                <!-- Portrait images -->
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 1">
-                    <div class="gallery-caption">Lorem ipsum dolor sit amet</div>
+                    <img src="https://picsum.photos/600/900" alt="Mobile Photography - Portrait">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 2">
-                    <div class="gallery-caption">Consectetur adipiscing elit</div>
+                    <img src="https://picsum.photos/600/800" alt="Mobile Photography - Portrait">
+                </div>
+                
+                <!-- Landscape images -->
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/900/600" alt="Mobile Photography - Landscape">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 3">
-                    <div class="gallery-caption">Sed do eiusmod tempor</div>
+                    <img src="https://picsum.photos/800/500" alt="Mobile Photography - Landscape">
+                </div>
+                
+                <!-- Square images -->
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/700/700" alt="Mobile Photography - Square">
+                </div>
+                
+                <!-- More varied ratios -->
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/600/800" alt="Mobile Photography">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300" alt="Gallery Image 4">
-                    <div class="gallery-caption">Ut labore et dolore magna</div>
+                    <img src="https://picsum.photos/800/600" alt="Mobile Photography">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/650/900" alt="Mobile Photography">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/850/600" alt="Mobile Photography">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/600/600" alt="Mobile Photography">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/700/900" alt="Mobile Photography">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/900/700" alt="Mobile Photography">
                 </div>
             </div>
         </section>
@@ -45,7 +72,6 @@
     <script src="script.js"></script>
     <script src="components.js"></script>
     <script>
-        // Load navigation when the page loads
         document.addEventListener('DOMContentLoaded', loadNavigation);
     </script>
 </body>
