@@ -8,13 +8,13 @@ const navigationComponent = `
     <div id="mySidenav" class="side-menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2>Resume</h2>
-        <a href="./JOSHUA-SALAKO-AI.pdf" target="_blank">
+        <a href="./files/JOSHUA-SALAKO-AI.pdf" target="_blank">
             <i class="fas fa-file-pdf"></i> AI Resume
         </a>
-        <a href="./JOSHUA-SALAKO-MOBILE.pdf" target="_blank">
+        <a href="./files/JOSHUA-SALAKO-MOBILE.pdf" target="_blank">
             <i class="fas fa-file-pdf"></i> Mobile Dev Resume
         </a>
-        <a href="./JOSHUA-SALAKO-BACKEND.pdf" target="_blank">
+        <a href="./files/JOSHUA-SALAKO-BACKEND.pdf" target="_blank">
             <i class="fas fa-file-pdf"></i> Backend Resume
         </a>
     </div>
@@ -35,7 +35,7 @@ const navigationComponent = `
 const headerComponent = `
     <header>
         <div class="header-content">
-            <img src="./avatar.png" alt="Joshua Salako" class="profile-img">
+            <img src="./images/avatar.png" alt="Joshua Salako" class="profile-img">
             <h1>Joshua Salako</h1>
             <p>AI Researcher | Mobile Developer | Backend Developer</p>
             <div class="social-links">
