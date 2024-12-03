@@ -1,5 +1,6 @@
 // Navigation Components
 const navigationComponent = `
+    <div class="background-wrapper"></div>
     <div class="nav-wrapper"></div>
     <span class="hamburger" onclick="openNav()">
         <i class="fas fa-bars"></i>
@@ -57,20 +58,12 @@ const headerComponent = `
             </div>
             <div class="about-content">
                 <p>
-                    I am a highly accomplished AI and Software Engineer with over 5 years of experience in developing
-                    innovative solutions. Combining my electrical engineering background with expertise in AI/ML, I
-                    specialize in creating scalable applications that drive business growth and enhance user engagement.
+                    I am a driven AI researcher and software engineer passionate about developing and applying cutting-edge AI solutions to real-world challenges.
                 </p>
                 <div class="read-more-content">
                     <p>
-                        My technical toolkit includes proficiency in TensorFlow, PyTorch, and Keras for AI/ML
-                        development, alongside strong programming skills in Python and Dart. I have a proven track record of
-                        implementing efficient algorithms and collaborating across teams to deliver impactful solutions.
-                    </p>
-                    <p>
-                        Passionate about leveraging cutting-edge technology to improve lives, I remain committed to
-                        staying current with emerging industry trends while focusing on creating meaningful technological
-                        advancements that solve real-world problems.
+                        With a background in Electrical and Electronics Engineering, I specializes in machine learning, deep learning, computer vision, and natural language processing. 
+                        I am committed to building AI for social good, while focusing on creating accessible and impactful technologies for underserved communities.
                     </p>
                 </div>
                 <span class="read-more-btn" onclick="toggleReadMore(this)">Read More</span>
