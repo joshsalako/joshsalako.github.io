@@ -769,3 +769,14 @@ body.dark-theme .theme-toggle {
 body.dark-theme .ribbon {
     background: #5dade2;
 }
+
+.award-tag {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body.dark-theme .award-tag {
+    color: #ccc;
+}
