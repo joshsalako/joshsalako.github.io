@@ -416,17 +416,18 @@ body.dark-theme .project-card:hover {
 }
 
 .about-content p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 1.1em;
 }
 
 .read-more-btn {
     display: inline-block;
-    margin: 10px 0;
+    margin: 5px 0;
     color: #3498db;
     cursor: pointer;
     font-weight: 400;
     transition: color 0.3s ease;
+    text-decoration: underline;
 }
 
 .read-more-btn:hover {
@@ -951,4 +952,11 @@ body.dark-theme .award-tag {
 .lightbox-content {
     animation-name: zoom;
     animation-duration: 0.6s;
+}
+
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
 }
