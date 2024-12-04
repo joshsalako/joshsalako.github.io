@@ -17,50 +17,56 @@
             <h2>Photography Gallery</h2>
             <div class="gallery-container">
                 <!-- Portrait images -->
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/600/900" alt="Mobile Photography - Portrait">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/600/800" alt="Mobile Photography - Portrait">
                 </div>
                 
                 <!-- Landscape images -->
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/900/600" alt="Mobile Photography - Landscape">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/800/500" alt="Mobile Photography - Landscape">
                 </div>
                 
                 <!-- Square images -->
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/700/700" alt="Mobile Photography - Square">
                 </div>
                 
                 <!-- More varied ratios -->
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/600/800" alt="Mobile Photography">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/800/600" alt="Mobile Photography">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/650/900" alt="Mobile Photography">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/850/600" alt="Mobile Photography">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/600/600" alt="Mobile Photography">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/700/900" alt="Mobile Photography">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/900/700" alt="Mobile Photography">
                 </div>
             </div>
         </section>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="Lightbox Image">
     </div>
 
     <footer>
@@ -73,6 +79,39 @@
     <script src="components.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', loadNavigation);
+
+        function openLightbox(element) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const img = element.querySelector('img');
+            
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            
+            // Prevent scrolling when lightbox is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Prevent lightbox from closing when clicking on the image
+        document.getElementById('lightbox-img').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
     </script>
 </body>
 
