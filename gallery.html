@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Joshua Salako</title>
     <link rel="icon" type="image/png" href="./avatar.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,25 +19,26 @@
             <div class="gallery-container">
                 <!-- Portrait images -->
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://picsum.photos/600/900" alt="Mobile Photography - Portrait">
+                    <img src="https://drive.google.com/uc?export=view&id=1yJk1-T4DBL2WiechNirwQnYfmD8S3HG2"
+                        alt="Mobile Photography - Portrait">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/600/800" alt="Mobile Photography - Portrait">
                 </div>
-                
+
                 <!-- Landscape images -->
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://picsum.photos/900/600" alt="Mobile Photography - Landscape">
+                    <img src="https://drive.google.com/thumbnail?id=1yJk1-T4DBL2WiechNirwQnYfmD8S3HG2&sz=w1000" alt="Mobile Photography - Landscape">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/800/500" alt="Mobile Photography - Landscape">
                 </div>
-                
+
                 <!-- Square images -->
                 <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/700/700" alt="Mobile Photography - Square">
                 </div>
-                
+
                 <!-- More varied ratios -->
                 <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://picsum.photos/600/800" alt="Mobile Photography">
@@ -84,11 +86,11 @@
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const img = element.querySelector('img');
-            
+
             lightbox.style.display = 'block';
             lightboxImg.src = img.src;
             lightboxImg.alt = img.alt;
-            
+
             // Prevent scrolling when lightbox is open
             document.body.style.overflow = 'hidden';
         }
@@ -96,23 +98,23 @@
         function closeLightbox() {
             const lightbox = document.getElementById('lightbox');
             lightbox.style.display = 'none';
-            
+
             // Re-enable scrolling
             document.body.style.overflow = 'auto';
         }
 
         // Close lightbox when pressing Escape key
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
                 closeLightbox();
             }
         });
 
         // Prevent lightbox from closing when clicking on the image
-        document.getElementById('lightbox-img').addEventListener('click', function(event) {
+        document.getElementById('lightbox-img').addEventListener('click', function (event) {
             event.stopPropagation();
         });
     </script>
 </body>
 
-</html> 
+</html>
