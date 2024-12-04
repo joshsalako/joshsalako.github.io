@@ -961,3 +961,57 @@ body.dark-theme .award-tag {
     gap: 20px;
     padding: 15px 20px;
 }
+
+/* Buy Me a Coffee Button */
+.bmc-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #FFDD00;
+    color: #000000;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.bmc-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background-color: #FFE333;
+}
+
+.bmc-button i {
+    font-size: 1.2em;
+}
+
+/* Mobile responsiveness for Buy Me a Coffee button */
+@media screen and (max-width: 768px) {
+    .bmc-button {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bmc-button span {
+        display: none;
+    }
+
+    .bmc-button {
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+    .bmc-button i {
+        margin: 0;
+    }
+}
