@@ -127,22 +127,89 @@ function loadMoreImages() {
 }
 
 // Lightbox functionality
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const originalImg = document.querySelector(`[data-image-id="${currentImageId}"] img`);
+    
+    if (originalImg) {
+        // Get the original image's position and size
+        const rect = originalImg.getBoundingClientRect();
+        
+        // Animate back to thumbnail position
+        lightboxImg.style.width = rect.width + 'px';
+        lightboxImg.style.height = rect.height + 'px';
+        lightboxImg.style.top = rect.top + 'px';
+        lightboxImg.style.left = rect.left + 'px';
+    }
+    
+    // Remove show class
+    lightbox.classList.remove('show');
+    
+    // Wait for animation to complete
+    setTimeout(() => {
+        lightbox.style.display = 'none';
+        // Reset styles
+        lightboxImg.style.width = '';
+        lightboxImg.style.height = '';
+        lightboxImg.style.top = '';
+        lightboxImg.style.left = '';
+        document.body.style.overflow = 'auto';
+    }, 300);
+}
+
+// Track current image ID for closing animation
+let currentImageId = null;
+
 function openLightbox(element) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
+    const downloadLink = document.getElementById('download-link');
     const img = element.querySelector('img');
     
+    // Store current image ID
+    currentImageId = element.getAttribute('data-image-id');
+    
+    // Get the clicked image's position and size
+    const rect = img.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    // Calculate target size while maintaining aspect ratio
+    const imgAspectRatio = img.naturalWidth / img.naturalHeight;
+    let targetWidth = Math.min(viewportWidth * 0.9, img.naturalWidth);
+    let targetHeight = targetWidth / imgAspectRatio;
+    
+    if (targetHeight > viewportHeight * 0.9) {
+        targetHeight = viewportHeight * 0.9;
+        targetWidth = targetHeight * imgAspectRatio;
+    }
+    
+    // Set initial position and size
+    lightboxImg.style.width = rect.width + 'px';
+    lightboxImg.style.height = rect.height + 'px';
+    lightboxImg.style.top = rect.top + 'px';
+    lightboxImg.style.left = rect.left + 'px';
+    
+    // Show lightbox
     lightbox.style.display = 'block';
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     
+    // Update download link
+    downloadLink.href = `https://drive.google.com/uc?export=download&id=${currentImageId}`;
+    
+    // Force reflow
+    lightboxImg.offsetHeight;
+    
+    // Add show class and set final position
+    lightbox.classList.add('show');
+    lightboxImg.style.width = targetWidth + 'px';
+    lightboxImg.style.height = targetHeight + 'px';
+    lightboxImg.style.top = ((viewportHeight - targetHeight) / 2) + 'px';
+    lightboxImg.style.left = ((viewportWidth - targetWidth) / 2) + 'px';
+    
     document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox() {
-    const lightbox = document.getElementById('lightbox');
-    lightbox.style.display = 'none';
-    document.body.style.overflow = 'auto';
 }
 
 // Modified initialize function to include periodic checks

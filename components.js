@@ -62,7 +62,7 @@ const headerComponent = `
                 </p>
                 <div class="read-more-content">
                     <p>
-                        With a background in Electrical and Electronics Engineering, I specializes in machine learning, deep learning, computer vision, and natural language processing. 
+                        I specializes in machine learning, deep learning, computer vision, and natural language processing. 
                         I am committed to building AI for social good, while focusing on creating accessible and impactful technologies for underserved communities.
                     </p>
                 </div>

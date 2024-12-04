@@ -15,7 +15,7 @@
 <body class="gallery-page">
     <div class="container">
         <section>
-            <h2>Mobile Photography Gallery</h2>
+            <h2>Gallery</h2>
             <div class="gallery-container" id="gallery-container">
                 <!-- Images will be loaded dynamically -->
             </div>
@@ -25,6 +25,11 @@
     <!-- Lightbox -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <span class="close-btn">&times;</span>
+        <span class="download-btn" onclick="event.stopPropagation()">
+            <a href="" download id="download-link">
+                <i class="fas fa-download"></i>
+            </a>
+        </span>
         <img id="lightbox-img" class="lightbox-content" src="" alt="Lightbox Image">
     </div>
 
