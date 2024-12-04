@@ -37,7 +37,7 @@ const headerComponent = `
     <header>
         <div class="header-content">
             <img src="./images/avatar.png" alt="Joshua Salako" class="profile-img">
-            <h1>Joshua Salako</h1>
+            <h1>Josh Salako</h1>
             <p>AI Researcher | Mobile Developer | Backend Developer</p>
             <div class="social-links">
                 <a href="https://x.com/josh_salako" target="_blank" title="Twitter/X">

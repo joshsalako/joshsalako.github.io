@@ -91,8 +91,8 @@ h1 {
 
 /* Base section styles */
 section {
-    padding: 40px 0;
-    margin: 20px 0;
+    margin-bottom: 30px;
+    padding: 0 20px;
     background: transparent;
 }
 
@@ -1094,4 +1094,26 @@ body.dark-theme .award-tag {
         left: 15px;
         font-size: 22px;
     }
+}
+
+.pdf-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.pdf-viewer {
+    display: block;
+    border: none;
+    background: #fff;
+}
+
+/* Dark theme support */
+.dark-theme .pdf-container {
+    background: #2d2d2d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
