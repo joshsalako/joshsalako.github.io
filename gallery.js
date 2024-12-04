@@ -191,25 +191,30 @@ function openLightbox(element) {
     lightboxImg.style.top = rect.top + 'px';
     lightboxImg.style.left = rect.left + 'px';
     
-    // Show lightbox
-    lightbox.style.display = 'block';
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-    
-    // Update download link
-    downloadLink.href = `https://drive.google.com/uc?export=download&id=${currentImageId}`;
-    
-    // Force reflow
-    lightboxImg.offsetHeight;
-    
-    // Add show class and set final position
-    lightbox.classList.add('show');
-    lightboxImg.style.width = targetWidth + 'px';
-    lightboxImg.style.height = targetHeight + 'px';
-    lightboxImg.style.top = ((viewportHeight - targetHeight) / 2) + 'px';
-    lightboxImg.style.left = ((viewportWidth - targetWidth) / 2) + 'px';
-    
-    document.body.style.overflow = 'hidden';
+    // Preload the new image
+    const tempImg = new Image();
+    tempImg.onload = () => {
+        // Show lightbox
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        
+        // Update download link
+        downloadLink.href = `https://drive.google.com/uc?export=download&id=${currentImageId}`;
+        
+        // Force reflow
+        lightboxImg.offsetHeight;
+        
+        // Add show class and set final position
+        lightbox.classList.add('show');
+        lightboxImg.style.width = targetWidth + 'px';
+        lightboxImg.style.height = targetHeight + 'px';
+        lightboxImg.style.top = ((viewportHeight - targetHeight) / 2) + 'px';
+        lightboxImg.style.left = ((viewportWidth - targetWidth) / 2) + 'px';
+        
+        document.body.style.overflow = 'hidden';
+    };
+    tempImg.src = img.src;
 }
 
 // Modified initialize function to include periodic checks
