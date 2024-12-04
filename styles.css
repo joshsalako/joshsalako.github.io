@@ -18,11 +18,20 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    min-height: calc(100vh - 60px);
+}
+
+section:first-of-type {
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 30px;
     padding: 0 20px;
-    flex: 1;
-    padding-top: 70px;
+    background: transparent;
 }
 
 /* Adjust container padding for pages without header */
@@ -1116,4 +1125,34 @@ body.dark-theme .award-tag {
 .dark-theme .pdf-container {
     background: #2d2d2d;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add margin-top to the first section to prevent navbar overlap */
+section:first-child {
+    margin-top: 60px; /* Height of the navbar */
+}
+
+/* Gallery specific spacing */
+.gallery-page section:first-child {
+    margin-top: 80px; /* Increased margin for gallery page */
+}
+
+/* Reset the general first-child margin for other pages */
+section:first-child {
+    margin-top: 0;
 }
