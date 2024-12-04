@@ -91,9 +91,13 @@ function loadMoreImages() {
 
     const container = document.getElementById('gallery-container');
     let loadedCount = 0;
+    let attemptsCount = 0;
+    const maxAttempts = imagesPerLoad * 2; // To handle cases where some images might be duplicates
 
-    for (let i = 0; i < imagesPerLoad; i++) {
+    while (loadedCount < imagesPerLoad && attemptsCount < maxAttempts) {
         const imageId = getRandomImage();
+        attemptsCount++;
+
         if (imageId === null) {
             if (loadedCount === 0) {
                 const endMessage = document.createElement('div');
@@ -101,9 +105,11 @@ function loadMoreImages() {
                 endMessage.textContent = 'End of Gallery';
                 container.appendChild(endMessage);
             }
+            allImagesRendered = true;
             break;
         }
 
+        // Check if this image is already displayed
         if (!document.querySelector(`[data-image-id="${imageId}"]`)) {
             const imageElement = createImageElement(imageId);
             container.appendChild(imageElement);
@@ -112,6 +118,12 @@ function loadMoreImages() {
     }
 
     isLoading = false;
+
+    // If we didn't load any images but haven't shown all images yet,
+    // it means we hit duplicates - try loading again
+    if (loadedCount === 0 && !allImagesRendered) {
+        loadMoreImages();
+    }
 }
 
 // Lightbox functionality
@@ -156,12 +168,19 @@ function initializeGallery() {
     // Load initial images
     loadMoreImages();
 
-    // Set up infinite scroll
+    // Set up infinite scroll with debounce
+    let scrollTimeout;
     window.addEventListener('scroll', () => {
-        if (!allImagesRendered && 
-            (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 1000) {
-            loadMoreImages();
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
         }
+
+        scrollTimeout = setTimeout(() => {
+            if (!allImagesRendered && !isLoading && 
+                (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 1000) {
+                loadMoreImages();
+            }
+        }, 100); // Debounce scroll events
     });
 
     // Set up periodic checks for new images
