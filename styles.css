@@ -663,19 +663,24 @@ body.dark-theme .project-card p {
     .nav-menu {
         left: 80px;
         gap: 15px;
-        max-width: calc(100% - 140px); /* Account for hamburger and theme toggle */
+        max-width: calc(100% - 140px);
+        /* Account for hamburger and theme toggle */
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-        scrollbar-width: none; /* Hide scrollbar Firefox */
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling on iOS */
+        scrollbar-width: none;
+        /* Hide scrollbar Firefox */
     }
 
     .nav-menu::-webkit-scrollbar {
-        display: none; /* Hide scrollbar Chrome/Safari */
+        display: none;
+        /* Hide scrollbar Chrome/Safari */
     }
 
     .nav-menu a {
         font-size: 0.9em;
-        white-space: nowrap; /* Prevent text wrapping */
+        white-space: nowrap;
+        /* Prevent text wrapping */
     }
 }
 
@@ -688,7 +693,8 @@ body.dark-theme .project-card p {
     .nav-menu {
         left: 60px;
         gap: 10px;
-        max-width: calc(100% - 100px); /* Adjust space for smaller screen */
+        max-width: calc(100% - 100px);
+        /* Adjust space for smaller screen */
     }
 
     .theme-toggle {
@@ -951,7 +957,8 @@ body.dark-theme .award-tag {
     transform-origin: center;
 }
 
-.close-btn, .download-btn {
+.close-btn,
+.download-btn {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -983,8 +990,13 @@ body.dark-theme .award-tag {
 
 /* Animation */
 @keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .lightbox-content {
@@ -1144,12 +1156,14 @@ body.dark-theme .award-tag {
 
 /* Add margin-top to the first section to prevent navbar overlap */
 section:first-child {
-    margin-top: 60px; /* Height of the navbar */
+    margin-top: 60px;
+    /* Height of the navbar */
 }
 
 /* Gallery specific spacing */
 .gallery-page section:first-child {
-    margin-top: 80px; /* Increased margin for gallery page */
+    margin-top: 80px;
+    /* Increased margin for gallery page */
 }
 
 /* Reset the general first-child margin for other pages */
