@@ -36,7 +36,14 @@ const navigationComponent = `
 const headerComponent = `
     <header>
         <div class="header-content">
-            <img src="./images/avatar.png" alt="Joshua Salako" class="profile-img">
+            <div class="profile-img-container">
+                <div class="orbit"></div>
+                <img src="./images/avatar.png" alt="Joshua Salako" class="profile-img">
+                <img src="./images/django.png" alt="Django" class="orbit-image orbit-django">
+                <img src="./images/flutter.png" alt="Flutter" class="orbit-image orbit-flutter">
+                <img src="./images/tensor.png" alt="TensorFlow" class="orbit-image orbit-tensor">
+                <img src="./images/pytorch.png" alt="PyTorch" class="orbit-image orbit-pytorch">
+            </div>
             <h1>Josh Salako</h1>
             <p>AI Researcher | Mobile Developer | Backend Developer</p>
             <div class="social-links">
