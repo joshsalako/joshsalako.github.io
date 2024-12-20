@@ -79,10 +79,68 @@ const headerComponent = `
     </header>
 `;
 
+// Snowflakes Component
+function isHolidaySeason() {
+    const today = new Date();
+    const month = today.getMonth(); // 0-11
+    const day = today.getDate();
+    
+    // Check if date is between December 1st and January 7th
+    return (month === 11) || (month === 0 && day <= 7);
+}
+
+function createSnowflakes() {
+    if (!isHolidaySeason()) return;
+
+    const snowflakesContainer = document.createElement('div');
+    snowflakesContainer.id = 'snowflakes-container';
+    document.body.appendChild(snowflakesContainer);
+
+    const snowflakes = '❅❆❄';
+    const numberOfSnowflakes = 30;  // Increased for more variety
+    const fallPatterns = ['fall-1', 'fall-2', 'fall-3', 'fall-4'];
+
+    for (let i = 0; i < numberOfSnowflakes; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake ' + fallPatterns[Math.floor(Math.random() * fallPatterns.length)];
+        snowflake.style.left = Math.random() * 100 + '%';
+        // Vary the animation duration between 18-25 seconds
+        snowflake.style.animationDuration = (18 + Math.random() * 7) + 's';
+        // Add a random delay to start
+        snowflake.style.animationDelay = (Math.random() * 10) + 's';
+        snowflake.innerHTML = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+        snowflakesContainer.appendChild(snowflake);
+    }
+}
+
+function createChristmasTree() {
+    if (!isHolidaySeason()) return;
+
+    const tree = document.createElement('div');
+    tree.className = 'christmas-tree';
+    tree.innerHTML = '🎄';
+    tree.title = 'Merry Christmas!';
+    
+    // Optional: Add click handler for future interactivity
+    tree.addEventListener('click', () => {
+        // You can add interactive features here later
+        tree.style.transform = 'scale(1.2) rotate(10deg)';
+        setTimeout(() => {
+            tree.style.transform = '';
+        }, 300);
+    });
+
+    document.body.appendChild(tree);
+}
+
 // Function to load navigation
 function loadNavigation() {
     // Insert the navigation at the start of the body
     document.body.insertAdjacentHTML('afterbegin', navigationComponent);
+    // Add snowflakes if it's holiday season
+    createSnowflakes();
+    // Add Christmas tree
+    createChristmasTree();
 }
 
 // Function to load header (for home page only)
