@@ -97,7 +97,7 @@ function createSnowflakes() {
     document.body.appendChild(snowflakesContainer);
 
     const snowflakes = '❅❆❄';
-    const numberOfSnowflakes = 30;  // Increased for more variety
+    const numberOfSnowflakes = 20;  // Increased for more variety
     const fallPatterns = ['fall-1', 'fall-2', 'fall-3', 'fall-4'];
 
     for (let i = 0; i < numberOfSnowflakes; i++) {

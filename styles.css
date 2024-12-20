@@ -1356,7 +1356,7 @@ section:first-child {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    font-size: 4em;
+    font-size: 3.5em;
     color: #2ecc71;
     text-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
     cursor: pointer;
