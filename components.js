@@ -82,35 +82,91 @@ const headerComponent = `
 // Snowflakes Component
 function isHolidaySeason() {
     const today = new Date();
-    const month = today.getMonth(); // 0-11
+    const month = today.getMonth();
     const day = today.getDate();
-    
-    // Check if date is between December 1st and January 7th
     return (month === 11) || (month === 0 && day <= 7);
 }
 
 function createSnowflakes() {
     if (!isHolidaySeason()) return;
 
-    const snowflakesContainer = document.createElement('div');
-    snowflakesContainer.id = 'snowflakes-container';
-    document.body.appendChild(snowflakesContainer);
+    const snowContainer = document.createElement('div');
+    snowContainer.className = 'snow-container';
+    document.body.appendChild(snowContainer);
 
-    const snowflakes = '❅❆❄';
-    const numberOfSnowflakes = 20;  // Increased for more variety
-    const fallPatterns = ['fall-1', 'fall-2', 'fall-3', 'fall-4'];
+    const particlesPerThousandPixels = 0.1;
+    const fallSpeed = 1.25;
+    const maxSnowflakes = 200;
+    const snowflakes = [];
+    
+    let snowflakeInterval;
+    let isTabActive = true;
 
-    for (let i = 0; i < numberOfSnowflakes; i++) {
-        const snowflake = document.createElement('div');
-        snowflake.className = 'snowflake ' + fallPatterns[Math.floor(Math.random() * fallPatterns.length)];
-        snowflake.style.left = Math.random() * 100 + '%';
-        // Vary the animation duration between 18-25 seconds
-        snowflake.style.animationDuration = (18 + Math.random() * 7) + 's';
-        // Add a random delay to start
-        snowflake.style.animationDelay = (Math.random() * 10) + 's';
-        snowflake.innerHTML = snowflakes[Math.floor(Math.random() * snowflakes.length)];
-        snowflakesContainer.appendChild(snowflake);
+    function resetSnowflake(snowflake) {
+        const size = Math.random() * 5 + 1;
+        const viewportWidth = window.innerWidth - size;
+        const viewportHeight = window.innerHeight;
+
+        snowflake.style.width = `${size}px`;
+        snowflake.style.height = `${size}px`;
+        snowflake.style.left = `${Math.random() * viewportWidth}px`;
+        snowflake.style.top = `-${size}px`;
+
+        const animationDuration = (Math.random() * 3 + 2) / fallSpeed;
+        snowflake.style.animationDuration = `${animationDuration}s`;
+        snowflake.style.animationTimingFunction = 'linear';
+        snowflake.style.animationName = Math.random() < 0.5 ? 'fall' : 'diagonal-fall';
+
+        setTimeout(() => {
+            if (parseInt(snowflake.style.top, 10) < viewportHeight) {
+                resetSnowflake(snowflake);
+            } else {
+                snowflake.remove();
+                const index = snowflakes.indexOf(snowflake);
+                if (index > -1) snowflakes.splice(index, 1);
+            }
+        }, animationDuration * 1000);
     }
+
+    function createSnowflake() {
+        if (snowflakes.length < maxSnowflakes) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflakes.push(snowflake);
+            snowContainer.appendChild(snowflake);
+            resetSnowflake(snowflake);
+        }
+    }
+
+    function generateSnowflakes() {
+        const numberOfParticles = Math.ceil((window.innerWidth * window.innerHeight) / 1000) * particlesPerThousandPixels;
+        const interval = 5000 / numberOfParticles;
+
+        clearInterval(snowflakeInterval);
+        snowflakeInterval = setInterval(() => {
+            if (isTabActive && snowflakes.length < maxSnowflakes) {
+                requestAnimationFrame(createSnowflake);
+            }
+        }, interval);
+    }
+
+    function handleVisibilityChange() {
+        isTabActive = !document.hidden;
+        if (isTabActive) {
+            generateSnowflakes();
+        } else {
+            clearInterval(snowflakeInterval);
+        }
+    }
+
+    generateSnowflakes();
+
+    window.addEventListener('resize', () => {
+        clearInterval(snowflakeInterval);
+        setTimeout(generateSnowflakes, 1000);
+    });
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 }
 
 function createChristmasTree() {

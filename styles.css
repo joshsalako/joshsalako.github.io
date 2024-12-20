@@ -1254,101 +1254,50 @@ section:first-child {
 }
 
 /* Snowflakes */
-.snowflake {
+.snow-container {
     position: fixed;
-    top: -10px;
-    color: white;
-    font-size: 1em;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-    z-index: 1000;
-    user-select: none;
-    cursor: default;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    pointer-events: none;
 }
 
-/* Different size variations */
-.snowflake:nth-of-type(5n) {
-    font-size: 2em;
+.snowflake {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
     opacity: 0.8;
+    pointer-events: none;
 }
 
-.snowflake:nth-of-type(5n+1) {
-    font-size: 1.75em;
-    opacity: 0.6;
-}
-
-.snowflake:nth-of-type(5n+2) {
-    font-size: 1.5em;
-    opacity: 0.9;
-}
-
-.snowflake:nth-of-type(5n+3) {
-    font-size: 1.25em;
-    opacity: 0.7;
-}
-
-.snowflake:nth-of-type(5n+4) {
-    font-size: 0.8em;
-    opacity: 0.85;
-}
-
-/* Different falling patterns */
-.fall-1 {
-    animation: snowfall-1 20s linear infinite;
-}
-
-.fall-2 {
-    animation: snowfall-2 22s linear infinite;
-}
-
-.fall-3 {
-    animation: snowfall-3 18s linear infinite;
-}
-
-.fall-4 {
-    animation: snowfall-4 25s linear infinite;
-}
-
-@keyframes snowfall-1 {
-    0% { 
-        top: -10%;
-        transform: translateX(0);
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
     }
-    100% { 
-        top: 100%;
-        transform: translateX(100px);
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(100vh);
     }
 }
 
-@keyframes snowfall-2 {
-    0% { 
-        top: -10%;
-        transform: translateX(100px);
+@keyframes diagonal-fall {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
     }
-    100% { 
-        top: 100%;
-        transform: translateX(-100px);
+    10% {
+        opacity: 1;
     }
-}
-
-@keyframes snowfall-3 {
-    0% { 
-        top: -10%;
-        transform: translateX(-50px);
-    }
-    100% { 
-        top: 100%;
-        transform: translateX(50px);
-    }
-}
-
-@keyframes snowfall-4 {
-    0% { 
-        top: -10%;
-        transform: translateX(0);
-    }
-    100% { 
-        top: 100%;
-        transform: translateX(0);
+    100% {
+        opacity: 0.25;
+        transform: translate(10vw, 100vh);
     }
 }
 
