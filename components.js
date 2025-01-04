@@ -45,7 +45,7 @@ const headerComponent = `
                 <img src="./images/pytorch.png" alt="PyTorch" class="orbit-image orbit-pytorch">
             </div>
             <h1>Josh Salako</h1>
-            <p>AI Researcher | Mobile Developer | Backend Developer</p>
+            <p style="font-size: 24px;">AI Researcher | Mobile Developer | Backend Developer</p>
             <div class="social-links">
                 <a href="https://x.com/josh_salako" target="_blank" title="Twitter/X">
                     <i class="fab fa-x-twitter"></i>
@@ -65,18 +65,15 @@ const headerComponent = `
             </div>
             <div class="about-content">
                 <p>
-                    I am a driven AI researcher and software engineer passionate about developing and applying cutting-edge AI solutions to real-world challenges.
+                    I am an AI researcher and software engineer dedicated to creating intelligent solutions that address real-world challenges and drive meaningful impact.
                 </p>
                 <div class="read-more-content">
                     <p>
-                        I specializes in machine learning, deep learning, computer vision, and natural language processing. 
-                        I am committed to building AI for social good, while focusing on creating accessible and impactful technologies for underserved communities.
+                        With expertise in machine learning, deep learning, computer vision, and natural language processing, I focus on building efficient, interpretable, and accessible AI systems. My work is guided by a commitment to leveraging technology for social good, empowering underserved communities, and advancing sustainable development through innovative applications of artificial intelligence.
                     </p>
                 </div>
                 <span class="read-more-btn" onclick="toggleReadMore(this)">Read More</span>
-            </div>
-        </div>
-    </header>
+    </div>
 `;
 
 // Snowflakes Component
@@ -98,7 +95,7 @@ function createSnowflakes() {
     const fallSpeed = 1.25;
     const maxSnowflakes = 200;
     const snowflakes = [];
-    
+
     let snowflakeInterval;
     let isTabActive = true;
 
@@ -176,7 +173,7 @@ function createChristmasTree() {
     tree.className = 'christmas-tree';
     tree.innerHTML = '🎄';
     tree.title = 'Merry Christmas!';
-    
+
     // Optional: Add click handler for future interactivity
     tree.addEventListener('click', () => {
         // You can add interactive features here later
