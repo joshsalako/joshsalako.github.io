@@ -1,0 +1,19 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Point to sitemap
+Sitemap: https://joshsalako.github.io/sitemap.xml
+
+# Specific rules for different bots (optional but recommended)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: / 
