@@ -34,17 +34,19 @@ const navigationComponent = `
 
 // Header Component
 const headerComponent = `
+    <div class="background-wrapper"></div>
     <header>
         <div class="header-content">
             <div class="profile-img-container">
                 <div class="orbit"></div>
-                <img src="./images/avatar.png" alt="Joshua Salako" class="profile-img">
+                <img src="./images/joshua.jpg" alt="Joshua Salako" class="profile-img">
                 <img src="./images/django.png" alt="Django" class="orbit-image orbit-django">
                 <img src="./images/flutter.png" alt="Flutter" class="orbit-image orbit-flutter">
                 <img src="./images/tensor.png" alt="TensorFlow" class="orbit-image orbit-tensor">
                 <img src="./images/pytorch.png" alt="PyTorch" class="orbit-image orbit-pytorch">
+                <img src="./images/python.png" alt="Python" class="orbit-image orbit-python">
             </div>
-            <h1>Josh Salako</h1>
+            <h1><span class="intro-text">I am  </span><span class="typing-text"></span><span class="cursor">|</span></h1>
             <p style="font-size: 24px;">AI Researcher | Mobile Developer | Backend Developer</p>
             <div class="social-links">
                 <a href="https://x.com/josh_salako" target="_blank" title="Twitter/X">
@@ -65,7 +67,7 @@ const headerComponent = `
             </div>
             <div class="about-content">
                 <p>
-                    I am an AI researcher and software engineer dedicated to creating intelligent solutions that address real-world challenges and drive meaningful impact.
+                    Aspiring PhD student in Electrical and Computer Engineering, dedicated to researching and developing intelligent solutions that address real-world challenges and drive meaningful impact.
                 </p>
                 <div class="read-more-content">
                     <p>
@@ -73,7 +75,9 @@ const headerComponent = `
                     </p>
                 </div>
                 <span class="read-more-btn" onclick="toggleReadMore(this)">Read More</span>
-    </div>
+            </div>
+        </div>
+    </header>
 `;
 
 // Snowflakes Component
@@ -198,6 +202,53 @@ function loadNavigation() {
 
 // Function to load header (for home page only)
 function loadHeader() {
-    // Insert the header after the navigation
-    document.querySelector('.nav-menu').insertAdjacentHTML('afterend', headerComponent);
-} 
+    const headerContainer = document.querySelector('.container');
+    if (headerContainer) {
+        headerContainer.insertAdjacentHTML('afterbegin', headerComponent);
+        setTimeout(initTypewriter, 500);
+    }
+}
+
+// Add this function to initialize the typing animation
+function initTypewriter() {
+    const text = "Josh Salako";
+    const typingText = document.querySelector('.typing-text');
+    const cursor = document.querySelector('.cursor');
+    let i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            typingText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 150);
+        } else {
+            // After typing is complete, wait 5 seconds then remove the blinking animation
+            setTimeout(() => {
+                cursor.style.animation = 'none';
+                cursor.style.opacity = '0';
+            }, 5000);
+        }
+    }
+
+    if (typingText) {
+        typingText.textContent = '';
+        typeWriter();
+    }
+}
+
+// Add this to the bottom of components.js
+document.addEventListener('DOMContentLoaded', function () {
+    const text = "Josh Salako";
+    const typingText = document.querySelector('.typing-text');
+    let i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            typingText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 150); // Adjust speed of typing here
+        }
+    }
+
+    typeWriter();
+}); 

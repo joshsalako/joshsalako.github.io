@@ -23,6 +23,9 @@ let isLoading = false;
 let allImagesRendered = false;
 const imagesPerLoad = 10;
 const checkInterval = 60000; // Check for new images every minute
+let imageViewCount = 0;
+let hasShownCoffeeNotification = false;
+let scrollPercentage = 0;
 
 // Function to extract image ID from Google Drive link
 function extractImageId(url) {
@@ -236,7 +239,12 @@ function openLightbox(element) {
         lightboxImg.src = highResImg.src;
     };
     highResImg.src = `https://drive.google.com/thumbnail?id=${currentImageId}&sz=w2500`;
+
+    // Increment view counter and check for notification
+    imageViewCount++;
+    checkForCoffeeNotification();
 }
+
 // Modified initialize function to include periodic checks
 function initializeGallery() {
     // Add styles for end message
@@ -278,6 +286,59 @@ function initializeGallery() {
     // Set up periodic checks for new images
     setInterval(checkForNewImages, checkInterval);
 }
+
+// Add scroll tracking
+document.addEventListener('scroll', () => {
+    // Calculate how far user has scrolled
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight - windowHeight;
+    const scrolled = window.scrollY;
+
+    scrollPercentage = (scrolled / documentHeight) * 100;
+
+    // Check if we should show notification (after 60% scroll or 5 image views)
+    checkForCoffeeNotification();
+});
+
+// Modify the check function to consider both scroll and views
+function checkForCoffeeNotification() {
+    if (!hasShownCoffeeNotification && (imageViewCount >= 5 || scrollPercentage >= 60)) {
+        hasShownCoffeeNotification = true;
+
+        const notification = document.createElement('div');
+        notification.className = 'coffee-notification';
+        notification.innerHTML = `
+            <div class="notification-content">
+                <i class="fas fa-mug-hot"></i>
+                <p>Enjoying the gallery? Consider buying me a coffee!</p>
+                <button onclick="window.open('https://www.buymeacoffee.com/joshsalako', '_blank')">Support</button>
+                <span class="close-notification" onclick="this.parentElement.parentElement.remove()">×</span>
+            </div>
+        `;
+        document.body.appendChild(notification);
+
+        // Animate in
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+
+        // Auto-remove after 10 seconds
+        setTimeout(() => {
+            if (notification.parentElement) {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 500);
+            }
+        }, 10000);
+    }
+}
+
+// Add this to handle cleanup if needed
+window.addEventListener('beforeunload', () => {
+    const notification = document.querySelector('.coffee-notification');
+    if (notification) {
+        notification.remove();
+    }
+});
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
