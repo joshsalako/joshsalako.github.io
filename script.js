@@ -8,7 +8,7 @@ function setCookie(name, value, days) {
 function getCookie(name) {
     const nameEQ = name + "=";
     const ca = document.cookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
+    for (let i = 0; i < ca.length; i++) {
         let c = ca[i];
         while (c.charAt(0) === ' ') c = c.substring(1, c.length);
         if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
@@ -23,9 +23,9 @@ function deleteCookie(name) {
 function toggleTheme() {
     const body = document.body;
     const themeIcon = document.querySelector('.theme-toggle i');
-    
+
     body.classList.toggle('dark-theme');
-    
+
     // Toggle between moon and sun icons
     if (body.classList.contains('dark-theme')) {
         themeIcon.classList.remove('fa-moon');
@@ -50,7 +50,7 @@ function toggleReadMore(btn) {
     const content = btn.previousElementSibling;
     content.classList.toggle('show');
     btn.textContent = content.classList.contains('show') ? 'Read Less' : 'Read More';
-    
+
     // Store read more state
     const contentId = content.getAttribute('id');
     if (contentId) {
@@ -59,12 +59,12 @@ function toggleReadMore(btn) {
 }
 
 // Close side menu when clicking outside
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     const sideNav = document.getElementById('mySidenav');
     const hamburger = document.querySelector('.hamburger');
-    
-    if (sideNav.style.width === "250px" && 
-        !sideNav.contains(event.target) && 
+
+    if (sideNav.style.width === "250px" &&
+        !sideNav.contains(event.target) &&
         !hamburger.contains(event.target)) {
         closeNav();
     }
@@ -75,13 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply saved theme
     const savedTheme = getCookie('theme');
     const themeIcon = document.querySelector('.theme-toggle i');
-    
+
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-theme');
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
     }
-    
+
     // Restore read more states
     document.querySelectorAll('.read-more-content').forEach(content => {
         const contentId = content.getAttribute('id');
@@ -105,7 +105,7 @@ async function loadComponent(name) {
     if (cached) {
         return cached;
     }
-    
+
     try {
         const response = await fetch(`components/${name}.html`);
         const html = await response.text();
@@ -130,4 +130,34 @@ async function loadHeader() {
     if (headerHtml) {
         document.querySelector('.container').insertAdjacentHTML('afterbegin', headerHtml);
     }
-} 
+}
+
+// Redirection configuration
+const REDIRECT_CONFIG = {
+    // Define redirect rules for different pages
+    // You can customize these URLs later
+    home: 'https://joshuasalako.vercel.app/',
+    projects: 'https://joshuasalako.vercel.app/projects',
+    certifications: 'https://joshuasalako.vercel.app/certifications',
+    // gallery: 'https://joshuasalako.vercel.app/gallery'
+};
+
+// Function to handle page-specific redirects
+function handleRedirect() {
+    // Get the current page path
+    const path = window.location.pathname;
+
+    // Determine which page is being visited
+    if (path.includes('index.html') || path === '/') {
+        window.location.href = REDIRECT_CONFIG.home;
+    } else if (path.includes('projects.html')) {
+        window.location.href = REDIRECT_CONFIG.projects;
+    } else if (path.includes('certifications.html')) {
+        window.location.href = REDIRECT_CONFIG.certifications;
+    } //else if (path.includes('gallery.html')) {
+    //window.location.href = REDIRECT_CONFIG.gallery;
+    //}
+}
+
+// Add redirect logic to run when the page loads
+document.addEventListener('DOMContentLoaded', handleRedirect); 
