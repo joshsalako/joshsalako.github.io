@@ -139,7 +139,7 @@ const REDIRECT_CONFIG = {
     home: 'https://joshuasalako.vercel.app/',
     projects: 'https://joshuasalako.vercel.app/projects',
     certifications: 'https://joshuasalako.vercel.app/certifications',
-    // gallery: 'https://joshuasalako.vercel.app/gallery'
+    gallery: 'https://joshuasalako.vercel.app/gallery'
 };
 
 // Function to handle page-specific redirects
@@ -154,9 +154,9 @@ function handleRedirect() {
         window.location.href = REDIRECT_CONFIG.projects;
     } else if (path.includes('certifications.html')) {
         window.location.href = REDIRECT_CONFIG.certifications;
-    } //else if (path.includes('gallery.html')) {
-    //window.location.href = REDIRECT_CONFIG.gallery;
-    //}
+    } else if (path.includes('gallery.html')) {
+        window.location.href = REDIRECT_CONFIG.gallery;
+    }
 }
 
 // Add redirect logic to run when the page loads
