@@ -1,0 +1,16 @@
+---
+layout: default
+title: Education
+description: Education and academic training of Joshua Salako.
+active_nav: education
+---
+<main class="shell archive-main">
+  <header class="archive-header">
+    <h1 class="page-title">Education</h1>
+    <p>Degrees, academic training, and thesis work.</p>
+  </header>
+  <div class="timeline-list">
+    {% for item in site.data.education %}{% include education-entry.html item=item %}{% endfor %}
+  </div>
+</main>
+

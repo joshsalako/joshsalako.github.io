@@ -1,0 +1,16 @@
+---
+layout: default
+title: News
+description: News and research updates from Joshua Salako.
+active_nav: news
+---
+<main class="shell archive-main">
+  <header class="archive-header">
+    <h1 class="page-title">News</h1>
+    <p>Research, publications, presentations, and selected milestones.</p>
+  </header>
+  <ol class="news-list">
+    {% for item in site.data.news %}{% include news-entry.html item=item %}{% endfor %}
+  </ol>
+</main>
+

@@ -1,0 +1,84 @@
+- title: "Latent Geometry of Taste: Scalable Low-Rank Matrix Factorization"
+  year: 2026
+  category: Recommender Systems
+  featured: false
+  authors:
+    - name: Joshua Salako
+      self: true
+  venue: arXiv preprint, 2026.
+  summary: A scalable recommendation system that learns compact patterns in 32 million movie ratings and balances personal relevance against popularity for new users.
+  links:
+    - label: Preprint
+      url: https://arxiv.org/abs/2601.03466
+    - label: Code
+      url: https://github.com/joshsalako/recommender
+
+- title: Multi-Lingual Contextual Audio Transcription and Translation to Selected Native Languages
+  year: 2025
+  category: Speech & Language Technology
+  featured: false
+  authors:
+    - name: Olubusola O. Nuga
+    - name: Kamoli A. Amusa
+    - name: Ayorinde J. Olanipekun
+    - name: Sikiru O. Ismail
+    - name: Samuel B. Owusu
+    - name: Joshua O. Salako
+      self: true
+    - name: Sikirulahi O. Abdulkareem
+    - name: Ahmed O. Lawal
+    - name: Peter O. Onabanjo
+  venue: 2nd Asia Pacific Conference on Innovation in Technology (APCIT), 2025, pp. 1–6.
+  summary: Combines speech transcription, topic modelling, and language translation to make recorded content more accessible in selected native languages.
+  links:
+    - label: Publication record
+      url: https://researchprofiles.herts.ac.uk/en/publications/multi-lingual-contextual-audio-transcription-and-translation-to-s/
+
+- title: "Data-Optimized Contingency Screening: A Machine Learning Approach to Power System Security"
+  year: 2025
+  category: Machine Learning & Power Systems
+  featured: false
+  authors:
+    - name: Joshua Salako
+      self: true
+    - name: O. Osikomaiya
+    - name: O. Olamiju
+  venue: 3rd EIE International Conference on Computing, Networking, Robotics and Telecommunication (EIECon), 2025.
+  summary: Uses machine learning to identify risky power-grid failures quickly, reducing the number of expensive contingency simulations operators need to run.
+
+- title: "Fish-NET: Advancing Aquaculture Management through AI-Enhanced Fish Monitoring and Tracking"
+  year: 2024
+  category: Computer Vision & Aquaculture
+  featured: true
+  authors:
+    - name: Joshua Salako
+      self: true
+    - name: Foluso Ojo
+    - name: Olushina Olawale Awe
+  venue: AGRIS on-line Papers in Economics and Informatics, 16(2), 121–131, 2024.
+  summary: Tests modern object detectors on catfish-pond imagery, then pairs the strongest model with tracking to automate fish monitoring for aquaculture managers.
+  links:
+    - label: Publication
+      url: https://online.agris.cz/archive/2024/02/09
+    - label: DOI
+      url: https://doi.org/10.7160/aol.2024.160209
+
+- title: A Comparative Exploration of SHAP and LIME for Enhancing the Interpretability of Machine Learning Models in Obesity Prediction
+  year: 2024
+  category: Explainable AI & Healthcare
+  featured: true
+  authors:
+    - name: Olushina Olawale Awe
+    - name: Joshua Salako
+      self: true
+    - name: Paulo Canas Rodrigues
+    - name: Natisha Dukhi
+    - name: Ronaldo Dias
+  venue: Practical Statistical Learning and Data Science Methods, Springer, 253–281, 2024.
+  summary: Compares two explanation methods, SHAP and LIME, to show how obesity-prediction models reach their decisions and where their explanations differ.
+  links:
+    - label: Publication
+      url: https://link.springer.com/chapter/10.1007/978-3-031-72215-8_11
+    - label: DOI
+      url: https://doi.org/10.1007/978-3-031-72215-8_11
+

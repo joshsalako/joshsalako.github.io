@@ -1,0 +1,10 @@
+title: Joshua Salako
+description: AI researcher and engineer working on computer vision for ecology and efficient machine learning.
+url: https://joshsalako.github.io
+baseurl: ""
+timezone: Africa/Johannesburg
+
+exclude:
+  - README.md
+  - LICENSE
+

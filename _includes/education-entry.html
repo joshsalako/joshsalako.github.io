@@ -1,0 +1,9 @@
+{% assign item = include.item %}
+<article class="timeline-item">
+  <p class="timeline-date">{{ item.dates | escape }}</p>
+  <h3>{{ item.degree | escape }}</h3>
+  <p>{{ item.institution | escape }}</p>
+  {% if item.details %}<p>{{ item.details | escape }}</p>{% endif %}
+  {% if item.thesis %}<p><em>Thesis:</em> {{ item.thesis | escape }}</p>{% endif %}
+</article>
+
