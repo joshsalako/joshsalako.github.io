@@ -68,7 +68,7 @@ h3 {
 }
 
 .shell {
-  width: min(100% - 48px, 840px);
+  width: min(100% - 48px, 720px);
   margin-inline: auto;
 }
 
@@ -95,8 +95,8 @@ h3 {
 
 .nav-links a {
   color: var(--muted);
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -429,6 +429,37 @@ main {
   content: "]";
 }
 
+.news-archive li {
+  position: relative;
+  display: block;
+  padding: 13px 0 13px 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--pale-slate) 62%, var(--snow));
+  line-height: 1.6;
+}
+
+.news-archive li::before {
+  position: absolute;
+  top: 16px;
+  left: 2px;
+  color: var(--air-force-blue);
+  content: "›";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.news-archive time {
+  margin-right: 5px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.news-archive p {
+  display: inline;
+  margin: 0;
+  font-size: 15px;
+}
+
 .news-list p,
 .timeline-item p,
 .honour-item p {
@@ -456,7 +487,7 @@ main {
 }
 
 .archive-main {
-  max-width: 840px;
+  max-width: 720px;
 }
 
 .archive-header {
@@ -490,7 +521,7 @@ main {
 
 @media (max-width: 720px) {
   .shell {
-    width: min(100% - 40px, 840px);
+    width: min(100% - 40px, 720px);
   }
 
   .site-nav {
@@ -505,7 +536,7 @@ main {
   }
 
   .nav-links a {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   main {
@@ -525,7 +556,7 @@ main {
 
 @media (max-width: 500px) {
   .shell {
-    width: min(100% - 32px, 840px);
+    width: min(100% - 32px, 720px);
   }
 
   .intro {
