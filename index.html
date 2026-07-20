@@ -27,22 +27,22 @@ description: Joshua Salako is an AI researcher and engineer working on computer 
   <section class="section" aria-labelledby="publications-title">
     <div class="section-heading">
       <h2 id="publications-title">Selected Publications</h2>
-      <a class="more-link" href="{{ '/publications.html' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
     </div>
     <div class="publication-list publication-preview">
       {% assign featured_publications = site.data.publications | where: 'featured', true %}
       {% for publication in featured_publications limit: 2 %}{% include publication-entry.html publication=publication show_summary=true %}{% endfor %}
     </div>
+    <p class="section-more"><a class="more-link" href="{{ '/publications.html' | relative_url }}">All publications <span aria-hidden="true">→</span></a></p>
   </section>
 
   <section class="section" aria-labelledby="recent-news-title">
     <div class="section-heading">
       <h2 id="recent-news-title">News</h2>
-      <a class="more-link" href="{{ '/news.html' | relative_url }}">All news <span aria-hidden="true">→</span></a>
     </div>
     <ol class="news-list news-preview">
       {% for item in site.data.news limit: 4 %}{% include news-entry.html item=item %}{% endfor %}
     </ol>
+    <p class="section-more"><a class="more-link" href="{{ '/news.html' | relative_url }}">All news <span aria-hidden="true">→</span></a></p>
   </section>
 
   <details class="section section-disclosure">
