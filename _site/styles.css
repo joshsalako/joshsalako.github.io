@@ -475,6 +475,10 @@ main {
   margin-bottom: 3px;
 }
 
+.news-list p a {
+  font-weight: 500;
+}
+
 .timeline-item + .timeline-item {
   margin-top: 30px;
 }

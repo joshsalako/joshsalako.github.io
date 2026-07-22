@@ -8,8 +8,8 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} · {% endif %}Joshua Salako">
     <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:image" content="{{ '/images/joshua.jpg' | absolute_url }}">
+    <meta property="og:url" content="{{ site.canonical_url }}{{ page.url | relative_url }}">
+    <meta property="og:image" content="{{ site.canonical_url }}{{ '/images/joshua.jpg' | relative_url }}">
     <title>{% if page.title %}{{ page.title | escape }} · {% endif %}Joshua Salako</title>
     <link rel="icon" type="image/png" href="{{ '/images/avatar.png' | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">

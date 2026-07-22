@@ -1,3 +1,2 @@
 {% assign item = include.item %}
-<li class="news-item"><time datetime="{{ item.date | escape }}">{{ item.display_date | escape }}</time><p>{{ item.text | escape }}</p></li>
-
+<li class="news-item"><time datetime="{{ item.date | escape }}">{{ item.display_date | escape }}</time><p>{% for part in item.parts %}{% if part.url %}<a href="{{ part.url | escape }}" target="_blank" rel="noopener noreferrer">{{ part.text | escape }}</a>{% else %}{{ part.text | escape }}{% endif %}{% endfor %}</p></li>

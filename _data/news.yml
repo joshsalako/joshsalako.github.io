@@ -1,31 +1,165 @@
 - date: 2026-07
   display_date: Jul 2026
-  text: Completed the M.Sc. in Mathematical Sciences with distinction as a Google DeepMind Scholar.
+  parts:
+    - text: "Defended my master's thesis on "
+    - text: Western Leopard Toads
+      url: https://github.com/joshsalako/wtl-detection
+    - text: " in 1.2 million camera-trap images—and graduated with distinction."
+
 - date: 2026-01
   display_date: Jan 2026
-  text: Released the Latent Geometry of Taste recommender-systems preprint.
+  parts:
+    - text: "Released "
+    - text: Latent Geometry of Taste
+      url: https://arxiv.org/abs/2601.03466
+    - text: ", my recommender-systems preprint built on 32 million movie ratings."
+
 - date: 2025-12
   display_date: Dec 2025
-  text: Began research with the Machine Learning for Ecology group at AIMS.
+  parts:
+    - text: "Joined the "
+    - text: Machine Learning for Ecology
+      url: https://github.com/joshsalako/wtl-detection
+    - text: " group at AIMS to build computer-vision tools for wildlife monitoring."
+
+- date: 2025-12
+  display_date: Dec 2025
+  parts:
+    - text: "Co-authored a "
+    - text: data-driven framework
+      url: https://ir.unilag.edu.ng/items/8986c663-c3d1-4bee-95b9-ba32e409c06b
+    - text: " for spotting at-risk students in Nigerian secondary schools."
+
 - date: 2025-10
   display_date: Oct 2025
-  text: Attended the AIMS Quantum Learning Algorithms workshop.
+  parts:
+    - text: "Spent four wonderfully nerdy days at the "
+    - text: AIMS Quantum Learning Algorithms workshop
+      url: https://aims-quantum-learning-and-testing.github.io/
+    - text: "."
+
 - date: 2025-09
   display_date: Sep 2025
-  text: Presented work on multilingual transcription and translation at APCIT 2025.
+  parts:
+    - text: "Presented our "
+    - text: multilingual transcription and translation paper
+      url: https://doi.org/10.1109/APCIT65661.2025.11411245
+    - text: " virtually at APCIT 2025."
+
+- date: 2025-09
+  display_date: Sep 2025
+  parts:
+    - text: "Started the AIMS AI for Science master's as a "
+    - text: Google DeepMind Scholar
+      url: https://deepmind.google/education/
+    - text: " and "
+    - text: Zeribe Nwosu Foundation Scholar
+      url: https://znwosufoundation.org/
+    - text: "."
+
 - date: 2025-08
   display_date: Aug 2025
-  text: Received two Deep Learning Indaba poster awards for innovation and impact.
+  parts:
+    - text: "Gave a lightning talk and presented two posters at the "
+    - text: Deep Learning Indaba
+      url: https://joshsalako.medium.com/my-deep-learning-indaba-experience-047ca4222b19
+    - text: "—and, plot twist, both posters won awards."
+
 - date: 2025-07
   display_date: Jul 2025
-  text: Presented the contingency-screening work at EIECon 2025.
+  parts:
+    - text: "Presented our machine-learning approach to faster power-grid contingency screening at "
+    - text: EIECon 2025
+      url: https://eieic.covenantuniversity.edu.ng/
+    - text: "."
+
 - date: 2025-06
   display_date: Jun 2025
-  text: Presented Fish-NET at Data Science Africa and began working as an AI/ML Engineer at Rio Eigen.
-- date: "2025"
-  display_date: "2025"
-  text: Received the Google DeepMind Master's Scholarship and the Zeribe Nwosu Foundation Scholarship.
-- date: "2024"
-  display_date: "2024"
-  text: Received the AWS AI & ML Scholarship and published Fish-NET and the SHAP/LIME interpretability study.
+  parts:
+    - text: "Took "
+    - text: Fish-NET
+      url: https://doi.org/10.7160/aol.2024.160209
+    - text: " to "
+    - text: Data Science Africa
+      url: https://archive.datascienceafrica.org/dsa2025ibadan/
+    - text: " for a poster session in Ibadan."
 
+- date: 2025-06
+  display_date: Jun 2025
+  parts:
+    - text: "Joined "
+    - text: Rio Eigen
+      url: https://rioeigen.com/about
+    - text: " as an AI/ML Engineer, building AI products and better annotation tools."
+
+- date: 2024-10
+  display_date: Oct 2024
+  parts:
+    - text: "Presented "
+    - text: Fish-NET
+      url: https://github.com/joshsalako/fishnet
+    - text: " at the "
+    - text: DSN AI Bootcamp
+      url: https://www.linkedin.com/posts/bayoadekanmbi_data-science-nigeria-dsn-ai-bootcamp-2024-activity-7254464069666058240-FZ8O
+    - text: "—another poster, another room full of good questions."
+
+- date: 2024-09
+  display_date: Sep 2024
+  parts:
+    - text: Graduated from FUNAAB with a B.Eng. in Electrical and Electronics Engineering and a 4.40/5.00 CGPA.
+
+- date: 2024-09
+  display_date: Sep 2024
+  parts:
+    - text: "Published our "
+    - text: SHAP vs. LIME study
+      url: https://doi.org/10.1007/978-3-031-72215-8_11
+    - text: " on explaining machine-learning predictions in a Springer volume."
+
+- date: 2024-06
+  display_date: Jun 2024
+  parts:
+    - text: "Published "
+    - text: Fish-NET
+      url: https://doi.org/10.7160/aol.2024.160209
+    - text: "—AI-powered monitoring and tracking for Nigerian catfish farms."
+
+- date: 2024-02
+  display_date: Feb 2024
+  parts:
+    - text: "Joined "
+    - text: ML Collective
+      url: https://mlcollective.org/
+    - text: " and began researching few-shot learning for blood-smear diagnosis."
+
+- date: 2023
+  display_date: 2023–24
+  parts:
+    - text: Received the Senator Olamilekan Yayi Undergraduate Scholarship in back-to-back academic years.
+
+- date: 2022-09
+  display_date: Sep 2022
+  parts:
+    - text: "Completed the "
+    - text: AWS AI & ML Scholarship
+      url: https://www.linkedin.com/posts/salakojoshua_aws-awsmlescholarship-udacity-activity-6975912168449814529-J5DS
+    - text: " and graduated from Udacity's AI Programming with Python Nanodegree."
+
+- date: 2022-05
+  display_date: May 2022
+  parts:
+    - text: Facilitated DSN's AI Invasion in Abeokuta, helping more than 150 students get started with AI.
+
+- date: 2022-05
+  display_date: May 2022
+  parts:
+    - text: "Published explainers on "
+    - text: image segmentation
+      url: https://levelup.gitconnected.com/image-segmentation-an-overview-on-how-its-algorithms-identify-objects-in-an-image-925cdf6bd03
+    - text: ", "
+    - text: computing Pi
+      url: https://levelup.gitconnected.com/generating-the-value-of-pi-to-a-known-number-of-decimals-places-in-python-e93986bb474d
+    - text: ", and "
+    - text: automating Android
+      url: https://levelup.gitconnected.com/automating-tasks-on-an-android-device-a2a3d45b0bf0
+    - text: " with Python."
