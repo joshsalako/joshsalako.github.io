@@ -31,8 +31,10 @@
   venue: 2nd Asia Pacific Conference on Innovation in Technology (APCIT), 2025, pp. 1–6.
   summary: Combines speech transcription, topic modelling, and language translation to make recorded content more accessible in selected native languages.
   links:
-    - label: Publication record
-      url: https://researchprofiles.herts.ac.uk/en/publications/multi-lingual-contextual-audio-transcription-and-translation-to-s/
+    - label: Publication
+      url: https://ieeexplore.ieee.org/abstract/document/11411245
+    - label: DOI
+      url: https://doi.org/10.1109/APCIT65661.2025.11411245
 
 - title: "Data-Optimized Contingency Screening: A Machine Learning Approach to Power System Security"
   year: 2025
@@ -81,4 +83,3 @@
       url: https://link.springer.com/chapter/10.1007/978-3-031-72215-8_11
     - label: DOI
       url: https://doi.org/10.1007/978-3-031-72215-8_11
-
