@@ -71,7 +71,9 @@
     - text: "Presented two posters at the "
     - text: Deep Learning Indaba
       url: https://joshsalako.medium.com/my-deep-learning-indaba-experience-047ca4222b19
-    - text: "—and, plot twist, both posters won awards."
+    - text: "—and, plot twist, both posters won awards. One grew out of my work with ML Collective. "
+    - text: "[poster]"
+      url: https://drive.google.com/file/d/1as2m5GwPlpNpI3pPOL_5FbO7-AIPeH8t/view
 
 - date: 2025-08
   display_date: Aug 2025
@@ -106,7 +108,9 @@
     - text: " to "
     - text: Data Science Africa
       url: https://www.linkedin.com/posts/salakojoshua_i-attended-the-just-concluded-data-science-activity-7337844842342821888-bi4v
-    - text: " for a poster session in Ibadan."
+    - text: " for a poster session in Ibadan. "
+    - text: "[poster]"
+      url: https://drive.google.com/file/d/1_W4IBI6qumvAJR18OJlfsK5QB34Te07q/view
 
 - date: 2025-06
   display_date: Jun 2025
@@ -125,7 +129,9 @@
     - text: " at the "
     - text: DSN AI Bootcamp
       url: https://www.linkedin.com/posts/bayoadekanmbi_data-science-nigeria-dsn-ai-bootcamp-2024-activity-7254464069666058240-FZ8O
-    - text: "—another poster, another room full of good questions."
+    - text: "—another poster, another room full of good questions. "
+    - text: "[poster]"
+      url: https://drive.google.com/file/d/1-57I-iYEWlqhytlt92yNe1eojMTBhzGr/view
 
 - date: 2024-09
   display_date: Sep 2024
@@ -162,7 +168,12 @@
     - text: "Entered Google's "
     - text: Solution Challenge
       url: https://www.linkedin.com/posts/salakojoshua_2022-solution-challenge-submitted-google-activity-6947919390851940352-GZ2l
-    - text: " twice; CleanUp was our bet on rewarding plastic-waste collection. No trophy, still worth building."
+    - text: " twice; CleanUp was our bet on rewarding plastic-waste collection. No trophy, still worth building. "
+    - text: "[2022 certificate]"
+      url: https://drive.google.com/file/d/1zNt5sUaIu_ZRGDgvKwl2pQrHhCT45kL3/view
+    - text: " "
+    - text: "[2024 certificate]"
+      url: https://drive.google.com/file/d/1lRsa9LbYghdX1eAuklzUvpAWUQOxMeD5/view
 
 - date: 2023-08
   display_date: Aug 2023
@@ -191,7 +202,9 @@
     - text: "Completed Andrew Ng's "
     - text: Deep Learning Specialization
       url: https://www.linkedin.com/posts/salakojoshua_completion-certificate-for-neural-networks-activity-6953146887658971136-1YRu
-    - text: " through financial aid—the spark for my self-taught AI journey."
+    - text: " through financial aid—the spark for my self-taught AI journey. "
+    - text: "[certificate]"
+      url: https://drive.google.com/file/d/1pF6XUrTWhHZ0kNoEqNurqLjQChqsZdVn/view
 
 - date: 2022-05
   display_date: May 2022
