@@ -4,7 +4,7 @@
     - text: "Defended my master's thesis on "
     - text: Western Leopard Toads
       url: https://github.com/joshsalako/wtl-detection
-    - text: " in 1.2 million camera-trap images—and graduated with distinction."
+    - text: " in 1.2 million camera-trap images. I graduated with distinction."
 
 - date: 2026-01
   display_date: Jan 2026
@@ -73,7 +73,7 @@
     - text: "Presented two posters at the "
     - text: Deep Learning Indaba
       url: https://joshsalako.medium.com/my-deep-learning-indaba-experience-047ca4222b19
-    - text: "—and, plot twist, both posters won awards. One grew out of my work with ML Collective. "
+    - text: " and, plot twist, both posters won awards. One grew out of my work with ML Collective. "
     - text: "[poster]"
       url: https://drive.google.com/file/d/1as2m5GwPlpNpI3pPOL_5FbO7-AIPeH8t/view
 
@@ -83,7 +83,7 @@
     - text: "Won the "
     - text: Zeribe Nwosu Scholarship
       url: https://www.linkedin.com/posts/salakojoshua_announcement-zeribenwosuscholarship-zns2025-activity-7359648670872481795-S7g1
-    - text: "—a lovely vote of confidence for the road ahead."
+    - text: ". A lovely vote of confidence for the road ahead."
 
 - date: 2025-07
   display_date: Jul 2025
@@ -91,7 +91,7 @@
     - text: "Volunteered with "
     - text: Foodimetric
       url: https://x.com/josh_salako/status/1950276333550145831
-    - text: " to build an African-centric food chatbot—code for a cause."
+    - text: " to build an African-centric food chatbot. Code for a cause."
 
 - date: 2025-07
   display_date: Jul 2025
@@ -99,7 +99,7 @@
     - text: "Presented our machine-learning approach to faster power-grid contingency screening at "
     - text: EIECon 2025
       url: https://www.linkedin.com/posts/salakojoshua_presented-my-research-on-power-systems-contingency-activity-7354583993977028608-QgRH
-    - text: "—now awaiting publication by IEEE."
+    - text: ". The paper is now awaiting publication by IEEE."
 
 - date: 2025-06
   display_date: Jun 2025
@@ -131,7 +131,7 @@
     - text: " at the "
     - text: DSN AI Bootcamp
       url: https://www.linkedin.com/posts/bayoadekanmbi_data-science-nigeria-dsn-ai-bootcamp-2024-activity-7254464069666058240-FZ8O
-    - text: "—another poster, another room full of good questions. "
+    - text: ". Another poster, another room full of good questions. "
     - text: "[poster]"
       url: https://drive.google.com/file/d/1-57I-iYEWlqhytlt92yNe1eojMTBhzGr/view
 
@@ -154,7 +154,7 @@
     - text: "Published "
     - text: Fish-NET
       url: https://doi.org/10.7160/aol.2024.160209
-    - text: "—AI-powered monitoring and tracking for Nigerian catfish farms."
+    - text: ", an AI-powered monitoring and tracking system for Nigerian catfish farms."
 
 - date: 2024-02
   display_date: Feb 2024
@@ -186,7 +186,7 @@
     - text: "Trained my first AI model at the "
     - text: DSN AI Bootcamp
       url: https://www.linkedin.com/posts/salakojoshua_dsnaibootcamp2023-aibootcamp2023-dsnai-activity-7100726736937439232-diDU
-    - text: "—an XGBoost classifier, and the start of many experiments."
+    - text: ". It was an XGBoost classifier and the start of many experiments."
 
 - date: 2023
   display_date: 2023–24
@@ -207,7 +207,7 @@
     - text: "Completed Andrew Ng's "
     - text: Deep Learning Specialization
       url: https://www.linkedin.com/posts/salakojoshua_completion-certificate-for-neural-networks-activity-6953146887658971136-1YRu
-    - text: " through financial aid—the spark for my self-taught AI journey. "
+    - text: " through financial aid. It sparked my self-taught AI journey. "
     - text: "[certificate]"
       url: https://drive.google.com/file/d/1pF6XUrTWhHZ0kNoEqNurqLjQChqsZdVn/view
 
