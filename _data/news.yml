@@ -43,8 +43,10 @@
   parts:
     - text: "Presented our "
     - text: multilingual transcription and translation paper
+      url: https://ieeexplore.ieee.org/abstract/document/11411245
+    - text: " virtually at APCIT 2025. "
+    - text: "[doi]"
       url: https://doi.org/10.1109/APCIT65661.2025.11411245
-    - text: " virtually at APCIT 2025."
 
 - date: 2025-09
   display_date: Sep 2025
@@ -168,7 +170,10 @@
     - text: "Entered Google's "
     - text: Solution Challenge
       url: https://www.linkedin.com/posts/salakojoshua_2022-solution-challenge-submitted-google-activity-6947919390851940352-GZ2l
-    - text: " twice; CleanUp was our bet on rewarding plastic-waste collection. No trophy, still worth building. "
+    - text: " twice; "
+    - text: CleanUp
+      url: https://www.figma.com/design/VBe1z3Fn8sdIRVhOKK4VOt/Untitled?node-id=0-1&t=ZjYFDvTHF1fFx09G-1
+    - text: " was our bet on rewarding plastic-waste collection. No trophy, still worth building. "
     - text: "[2022 certificate]"
       url: https://drive.google.com/file/d/1zNt5sUaIu_ZRGDgvKwl2pQrHhCT45kL3/view
     - text: " "
