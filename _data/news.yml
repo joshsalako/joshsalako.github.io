@@ -51,37 +51,61 @@
   parts:
     - text: "Started the AIMS AI for Science master's as a "
     - text: Google DeepMind Scholar
-      url: https://deepmind.google/education/
-    - text: " and "
-    - text: Zeribe Nwosu Foundation Scholar
-      url: https://znwosufoundation.org/
+      url: https://x.com/josh_salako/status/1978191636292108322
     - text: "."
 
 - date: 2025-08
   display_date: Aug 2025
   parts:
-    - text: "Gave a lightning talk and presented two posters at the "
+    - text: "Gave a "
+    - text: lightning talk
+      url: https://x.com/josh_salako/status/1958299643999146132
+    - text: " on the "
+    - text: Nollywood Movies IMDb Dataset
+      url: https://www.researchgate.net/publication/399181800_Nollywood_Movies_IMDb_Dataset
+    - text: " at the Deep Learning Indaba."
+
+- date: 2025-08
+  display_date: Aug 2025
+  parts:
+    - text: "Presented two posters at the "
     - text: Deep Learning Indaba
       url: https://joshsalako.medium.com/my-deep-learning-indaba-experience-047ca4222b19
     - text: "—and, plot twist, both posters won awards."
+
+- date: 2025-08
+  display_date: Aug 2025
+  parts:
+    - text: "Won the "
+    - text: Zeribe Nwosu Scholarship
+      url: https://www.linkedin.com/posts/salakojoshua_announcement-zeribenwosuscholarship-zns2025-activity-7359648670872481795-S7g1
+    - text: "—a lovely vote of confidence for the road ahead."
+
+- date: 2025-07
+  display_date: Jul 2025
+  parts:
+    - text: "Volunteered with "
+    - text: Foodimetric
+      url: https://x.com/josh_salako/status/1950276333550145831
+    - text: " to build an African-centric food chatbot—code for a cause."
 
 - date: 2025-07
   display_date: Jul 2025
   parts:
     - text: "Presented our machine-learning approach to faster power-grid contingency screening at "
     - text: EIECon 2025
-      url: https://eieic.covenantuniversity.edu.ng/
-    - text: "."
+      url: https://www.linkedin.com/posts/salakojoshua_presented-my-research-on-power-systems-contingency-activity-7354583993977028608-QgRH
+    - text: "—now awaiting publication by IEEE."
 
 - date: 2025-06
   display_date: Jun 2025
   parts:
     - text: "Took "
     - text: Fish-NET
-      url: https://doi.org/10.7160/aol.2024.160209
+      url: https://www.researchgate.net/publication/381856614_Fish-NET_Advancing_Aquaculture_Management_through_AI-Enhanced_Fish_Monitoring_and_Tracking
     - text: " to "
     - text: Data Science Africa
-      url: https://archive.datascienceafrica.org/dsa2025ibadan/
+      url: https://www.linkedin.com/posts/salakojoshua_i-attended-the-just-concluded-data-science-activity-7337844842342821888-bi4v
     - text: " for a poster session in Ibadan."
 
 - date: 2025-06
@@ -132,6 +156,22 @@
       url: https://mlcollective.org/
     - text: " and began researching few-shot learning for blood-smear diagnosis."
 
+- date: 2024-01
+  display_date: 2022 & 24
+  parts:
+    - text: "Entered Google's "
+    - text: Solution Challenge
+      url: https://www.linkedin.com/posts/salakojoshua_2022-solution-challenge-submitted-google-activity-6947919390851940352-GZ2l
+    - text: " twice; CleanUp was our bet on rewarding plastic-waste collection. No trophy, still worth building."
+
+- date: 2023-08
+  display_date: Aug 2023
+  parts:
+    - text: "Trained my first AI model at the "
+    - text: DSN AI Bootcamp
+      url: https://www.linkedin.com/posts/salakojoshua_dsnaibootcamp2023-aibootcamp2023-dsnai-activity-7100726736937439232-diDU
+    - text: "—an XGBoost classifier, and the start of many experiments."
+
 - date: 2023
   display_date: 2023–24
   parts:
@@ -144,6 +184,14 @@
     - text: AWS AI & ML Scholarship
       url: https://www.linkedin.com/posts/salakojoshua_aws-awsmlescholarship-udacity-activity-6975912168449814529-J5DS
     - text: " and graduated from Udacity's AI Programming with Python Nanodegree."
+
+- date: 2022-07
+  display_date: Jul 2022
+  parts:
+    - text: "Completed Andrew Ng's "
+    - text: Deep Learning Specialization
+      url: https://www.linkedin.com/posts/salakojoshua_completion-certificate-for-neural-networks-activity-6953146887658971136-1YRu
+    - text: " through financial aid—the spark for my self-taught AI journey."
 
 - date: 2022-05
   display_date: May 2022
