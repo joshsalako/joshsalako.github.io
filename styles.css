@@ -399,11 +399,6 @@ main {
   padding-top: 4px;
 }
 
-.section-archive-link {
-  display: inline-block;
-  margin-bottom: 24px;
-}
-
 .publication-links a,
 .scholar-link a {
   font-size: 13px;

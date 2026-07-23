@@ -52,10 +52,10 @@ description: Joshua Salako is an AI researcher and engineer working on computer 
       <span class="section-disclosure-icon" aria-hidden="true"></span>
     </summary>
     <div class="section-disclosure-content">
-      <a class="more-link section-archive-link" href="{{ '/education.html' | relative_url }}">All education <span aria-hidden="true">→</span></a>
       <div class="timeline-list">
         {% for item in site.data.education limit: 2 %}{% include education-entry.html item=item %}{% endfor %}
       </div>
+      <p class="section-more"><a class="more-link" href="{{ '/education.html' | relative_url }}">All education <span aria-hidden="true">→</span></a></p>
     </div>
   </details>
 
@@ -65,10 +65,10 @@ description: Joshua Salako is an AI researcher and engineer working on computer 
       <span class="section-disclosure-icon" aria-hidden="true"></span>
     </summary>
     <div class="section-disclosure-content">
-      <a class="more-link section-archive-link" href="{{ '/honours.html' | relative_url }}">All honours <span aria-hidden="true">→</span></a>
       <ol class="honours-list">
         {% for item in site.data.honours limit: 3 %}{% include honour-entry.html item=item %}{% endfor %}
       </ol>
+      <p class="section-more"><a class="more-link" href="{{ '/honours.html' | relative_url }}">All honours <span aria-hidden="true">→</span></a></p>
     </div>
   </details>
 </main>
