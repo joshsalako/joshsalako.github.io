@@ -118,7 +118,7 @@ main {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 160px;
+  grid-template-columns: minmax(0, 1fr) 184px;
   align-items: center;
   gap: 48px;
 }
@@ -169,8 +169,8 @@ main {
 
 .portrait {
   display: block;
-  width: 160px;
-  height: 160px;
+  width: 184px;
+  height: 184px;
   border-radius: 50%;
   box-shadow: none;
   object-fit: cover;
@@ -550,13 +550,13 @@ main {
   }
 
   .intro {
-    grid-template-columns: minmax(0, 1fr) 144px;
+    grid-template-columns: minmax(0, 1fr) 160px;
     gap: 32px;
   }
 
   .portrait {
-    width: 144px;
-    height: 144px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -669,8 +669,8 @@ main {
   }
 
   .portrait {
-    width: 132px;
-    height: 132px;
+    width: 148px;
+    height: 148px;
   }
 
   .intro h1,
