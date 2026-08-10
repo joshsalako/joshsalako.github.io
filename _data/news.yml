@@ -1,3 +1,14 @@
+- date: 2026-08
+  display_date: Aug 2026
+  parts:
+    - text: "Attended the "
+    - text: Deep Learning Indaba 2026
+      url: https://www.linkedin.com/posts/salakojoshua_deeplearningindaba-artificialintelligence-ugcPost-7492657797935976449-x87M/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC1HhdsBnD_OesnLEr5wgoLBFhvx6-KReCU
+    - text: ", at Pan-Atlantic University in Lagos. I presented "
+    - text: "Toads, Tunnels, and Transformers: Deep Learning for Detection and Identification of Western Leopard Toads"
+      url: https://drive.google.com/file/d/1iJ5ha2HLC1kwSCuy_MG-DxK2QeMQ8tqz/view?usp=drive_link
+    - text: ", a poster based on my master's thesis, and it was selected among the top 50 prize-winning posters."
+
 - date: 2026-07
   display_date: Jul 2026
   parts:
