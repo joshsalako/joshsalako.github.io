@@ -1,6 +1,17 @@
 - date: 2026-08
   display_date: Aug 2026
   parts:
+    - text: "Featured in "
+    - text: Cape {town} Etc
+      url: https://www.capetownetc.com/conservation/western-leopard-toad-tunnels-success/
+    - text: " and "
+    - text: Nature Connect
+      url: https://natureconnect.earth/2026/07/30/toad-tunnels-ai-endangered-species/
+    - text: " for our work using computer vision to provide automated evidence that endangered Western Leopard Toads are successfully using wildlife underpasses."
+
+- date: 2026-08
+  display_date: Aug 2026
+  parts:
     - text: "Attended the "
     - text: Deep Learning Indaba 2026
       url: https://www.linkedin.com/posts/salakojoshua_deeplearningindaba-artificialintelligence-ugcPost-7492657797935976449-x87M/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC1HhdsBnD_OesnLEr5wgoLBFhvx6-KReCU
