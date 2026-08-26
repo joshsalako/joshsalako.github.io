@@ -23,10 +23,18 @@
 - date: 2026-07
   display_date: Jul 2026
   parts:
+    - text: "Graduated with distinction from "
+    - text: AIMS South Africa
+      url: https://www.linkedin.com/posts/salakojoshua_aims-aimssouthafrica-googledeepmind-share-7497938731312762883-3hNv
+    - text: " with a master's in Mathematical Sciences, specializing in AI for Science."
+
+- date: 2026-07
+  display_date: Jul 2026
+  parts:
     - text: "Defended my master's thesis on "
     - text: Western Leopard Toads
       url: https://github.com/joshsalako/wtl-detection
-    - text: " in 1.2 million camera-trap images. I graduated with distinction."
+    - text: " in 1.2 million camera-trap images."
 
 - date: 2026-01
   display_date: Jan 2026
