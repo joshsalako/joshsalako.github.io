@@ -184,6 +184,24 @@ main {
   margin-bottom: 16px;
 }
 
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 6px 0 0;
+  color: var(--ruby-red);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--ruby-red);
+  flex-shrink: 0;
+}
+
 .section {
   padding-top: 54px;
 }
