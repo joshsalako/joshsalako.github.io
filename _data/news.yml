@@ -1,3 +1,19 @@
+- date: 2026-09
+  display_date: Sep 2026
+  parts:
+    - text: "Our paper on "
+    - text: annotation-efficient detection of endangered Western Leopard Toads
+      url: https://openreview.net/forum?id=0YnE65NGna
+    - text: " was accepted to the "
+    - text: CV4Ecology workshop
+      url: https://cv4e-workshop.github.io/
+    - text: " at ECCV 2026. I attended the workshop in Malmö and presented the work as a "
+    - text: poster
+      url: https://drive.google.com/file/d/1xnhgU568o7jucx6j4kPUVsSgZs2fpZju/view?usp=drive_link
+    - text: ". "
+    - text: "[LinkedIn post]"
+      url: https://www.linkedin.com/posts/salakojoshua_eccv2026-eccv-cv4e-activity-7503162130242789376-TWGx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC1HhdsBnD_OesnLEr5wgoLBFhvx6-KReCU
+
 - date: 2026-08
   display_date: Aug 2026
   parts:

@@ -1,3 +1,20 @@
+- title: "Annotation-Efficient Object Detection of Endangered Western Leopard Toads in Camera Trap Imagery for Assessing Wildlife Tunnel Use"
+  year: 2026
+  category: Computer Vision & Ecology
+  featured: true
+  authors:
+    - name: Joshua Salako
+      self: true
+    - name: Kim Gordon
+    - name: Lorène Jeantet
+  venue: Third Workshop on Computer Vision for Ecology (CV4E), ECCV 2026.
+  summary: Combines contrast enhancement, domain-specific transfer learning, active learning, and spatial postprocessing to detect endangered Western Leopard Toads in camera-trap imagery and monitor wildlife tunnel use.
+  links:
+    - label: Paper
+      url: https://openreview.net/pdf?id=0YnE65NGna
+    - label: OpenReview
+      url: https://openreview.net/forum?id=0YnE65NGna
+
 - title: "Latent Geometry of Taste: Scalable Low-Rank Matrix Factorization"
   year: 2026
   category: Recommender Systems
@@ -47,6 +64,9 @@
     - name: O. Olamiju
   venue: 3rd EIE International Conference on Computing, Networking, Robotics and Telecommunication (EIECon), 2025.
   summary: Uses machine learning to identify risky power-grid failures quickly, reducing the number of expensive contingency simulations operators need to run.
+  links:
+    - label: Preprint
+      url: https://arxiv.org/abs/2609.04300
 
 - title: "Fish-NET: Advancing Aquaculture Management through AI-Enhanced Fish Monitoring and Tracking"
   year: 2024
