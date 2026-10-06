@@ -1,3 +1,14 @@
+- date: 2026-10
+  display_date: Oct 2026
+  parts:
+    - text: "Gave a colloquium lecture on "
+    - text: "AI for Ecology: Exploring the Power of Deep Learning for Wildlife Monitoring"
+      url: https://youtu.be/4Ow6AoMGIvI?si=JyA7SMSahASQVqJH
+    - text: " at the "
+    - text: NITheCS Colloquium
+      url: https://nithecs.ac.za/events/all-events/ai-for-ecology-exploring-the-power-of-deep-learning-for-wildlife-monitoring
+    - text: ", hosted by the National Institute for Theoretical and Computational Sciences at Stellenbosch University."
+
 - date: 2026-09
   display_date: Sep 2026
   parts:
