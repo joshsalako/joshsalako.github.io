@@ -1,6 +1,14 @@
 - date: 2026-10
   display_date: Oct 2026
   parts:
+    - text: "Was featured on a Radio interview on "
+    - text: MFM 92.6 Stellenbosch
+      url: https://lnkd.in/p/dBmGPMP3
+    - text: " about using AI for Western Leopard Toad monitoring."
+
+- date: 2026-10
+  display_date: Oct 2026
+  parts:
     - text: "Gave a colloquium lecture on "
     - text: "AI for Ecology: Exploring the Power of Deep Learning for Wildlife Monitoring"
       url: https://youtu.be/4Ow6AoMGIvI?si=JyA7SMSahASQVqJH
