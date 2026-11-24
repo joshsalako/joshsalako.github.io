@@ -1,3 +1,10 @@
+- date: 2026-11
+  display_date: Nov 2026
+  parts:
+    - text: "Gave a lecture on computer vision for ecology as part of the Machine Learning for Ecology coursework at AIMS South Africa, together with Lorène Jeantet and Sam Lapp from MIT. "
+    - text: "[slides]"
+      url: https://docs.google.com/presentation/d/1TfxdUodQOHDkfcaeBOV-fY0VmIIMPj68KIRyUal2qbs/edit?usp=sharing
+
 - date: 2026-10
   display_date: Oct 2026
   parts:
